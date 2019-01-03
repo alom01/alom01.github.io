@@ -174,7 +174,8 @@ main {
 }
 .slideimg {
   vertical-align: middle;
-  max-height: 740px;
+  max-height: 500px;
+  width:50%;
 }
 
 /* Slideshow container */
