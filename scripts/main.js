@@ -22,16 +22,6 @@ console.log("newArray".length);
 
 
 
-
-
-
-
-
-
-
-
-
-
 var slideIndex = 1;
 showSlides(slideIndex);
 
