@@ -14,8 +14,14 @@ body {
   border-top: 15px solid red;
 }
 
-p{
+p {
   font-family: 'Hind', sans-serif;
+  font-size: 1.3em;
+}
+
+li {
+  font-family: 'Hind', sans-serif;
+  font-size: 1.3em;
 }
 
 nav ul {

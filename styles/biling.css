@@ -346,7 +346,12 @@ main {
 
 p {
   font-family: 'Hind', sans-serif;
+  font-size: 1.3em;
+}
 
+li {
+  font-family: 'Hind', sans-serif;
+  font-size: 1.3em;
 }
 
 footer {
