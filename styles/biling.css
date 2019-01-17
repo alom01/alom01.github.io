@@ -174,8 +174,8 @@ main {
 }
 .slideimg {
   vertical-align: middle;
-  max-height: 500px;
-  width:50%;
+  max-height: 100%;
+  max-width: 100%;
 }
 
 /* Slideshow container */
@@ -344,7 +344,10 @@ main {
 }
 
 
+p {
+  font-family: 'Hind', sans-serif;
 
+}
 
 footer {
   margin: 0;

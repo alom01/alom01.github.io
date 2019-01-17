@@ -14,6 +14,8 @@ body {
   border-top: 15px solid red;
 }
 
+p{ font-family: 'Hind', sans-serif;
+}
 
 nav ul {
   list-style: none;
@@ -174,8 +176,8 @@ main {
 }
 .slideimg {
   vertical-align: middle;
-  max-height: 500px;
-  width:50%;
+  max-height: 100%;
+  width:100%;
 }
 
 /* Slideshow container */

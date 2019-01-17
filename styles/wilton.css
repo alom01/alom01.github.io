@@ -4,14 +4,14 @@
 
 
 body {
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
   font-size: 100%;
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
   background-color: #ffff;
-  border-top: 15px solid red;
+  border-top: 15px solid #D01A1E;
 }
 
 
@@ -107,7 +107,7 @@ nav div:first-child h1, nav ul{
 content: "";
 width: 0%;
 height: 2px;
-background: #fe4a49;
+background: #D01A1E;
 position: absolute;
 bottom: 0;
 right: 0;
@@ -129,6 +129,7 @@ nav ul li a:hover::after, nav ul li a:hover::before{
 .title {
 	-webkit-animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 	        animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+          color: #D01A1E;
 }
 
 @-webkit-keyframes title {
@@ -156,7 +157,9 @@ nav ul li a:hover::after, nav ul li a:hover::before{
   }
 }
 
-
+p {
+  line-height: 1.6;
+}
 
 
 /* MAIN*/
@@ -174,17 +177,16 @@ main {
 }
 .slideimg {
   vertical-align: middle;
-  max-height: 740px;
+  max-height: 100%;
+  max-width: 100%;
 }
 
-/* Slideshow container */
 .slideshow-container {
   max-width: 900px;
   position: relative;
   margin: auto;
 }
 
-/* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -200,13 +202,11 @@ main {
   user-select: none;
 }
 
-/* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
@@ -222,7 +222,6 @@ main {
   top: 0;
 }
 
-/* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
   height: 15px;
@@ -238,7 +237,6 @@ main {
   background-color: #717171;
 }
 
-/* Fading animation */
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
@@ -256,7 +254,6 @@ main {
   to {opacity: 1}
 }
 
-/* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
@@ -265,12 +262,11 @@ main {
 
 .main-1 {
   display: flex;
-  background-image: url(".././images/nealsyard.png");
-  background-size: cover;
+background-image: url("https://farm7.staticflickr.com/6059/6258746852_1cd0446992_b.jpg");  background-size: cover;
   padding: 15% 10%;
   max-width: 100%;
-  border-top: 20px solid red;
-  border-bottom: 15px solid red;
+  border-top: 20px solid #D01A1E;
+  border-bottom: 15px solid #D01A1E;
 }
 
 
@@ -288,15 +284,15 @@ main {
 
 .main-2 {
   display: flex;
-  padding: 5%;
+  padding: 5% 3%;
 
 }
 
 .main-2 article {
-      order: 1; min-width: 75%;
+      order: 1; max-width: 75%;
       display: block;
       padding-right: 5%;
-      padding-left: 2%;
+
     }
 
     .gallery {
@@ -320,136 +316,34 @@ main {
   .main-2  aside {
     display: block;
       order: 2;
-      min-width: 35%;
-      border-left: 1px solid #2a2d34;
-      padding-left: 5%;
+      max-width: 25%;
+      border-left: 1px solid #D01A1E;
+      padding-left: 3%;
 
     }
 
 
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 20px;
+}
+
+.train {
+  text-decoration: none;
+  list-style-type: none;
+  line-height: 1.6;
+}
+
+p {
+  font-family: 'Hind', sans-serif;
+
+}
+
+
 footer {
   margin: 0;
-  background-color: red;
+  background-color: #D01A1E;
   padding: 3%;
 }
-
-
-
-
-/*
-body {
-background-color: #FAF8E8;
-}
-
-
-
-.header {
-  margin: 0;
-  height: 25%;
-  padding-top: 0%;
-  text-align: center;
-}
-
-
-
-
-
-
-
-
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-
-
-ul {
-  display: inline-block;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  display: inline;
-  float: right;
-  font-size: 1em;
-  font-family: 'Montserrat', sans-serif;
-
-}
-
-
-
-li a {
-  color: #2a2d34;
-  padding: 8px 16px;
-  text-decoration: none;
-}
-
-li a.active {
-  background-color: #ffbf00;
-  color: white;
-}
-
-li a:hover:not(.active) {
-  background-color: #fe4a49;
-  color: white;
-}
-
-.row-1 {
-  display: flex;
-  box-sizing: border-box;
-  flex-direction: row;
-}
-
-.logo {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding-left: : 0px;
-  align-items:
-
-}
-
-.logo img {
-  height: 150px;
-width: auto;
-}
-
-.flexcontainer {
-  display: flex;
-  flex-direction: row;
-justify-self: stretch;
-}
-
-
-
-
-
-
-
-.row-2 {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.row-2 img {
-  width: 1440px;
-  height: 637.5px;
-}
-
-
-
-h1 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 3em;
-  color: #2a2d34;
-  text-align: center;
-
-
- }
-*/

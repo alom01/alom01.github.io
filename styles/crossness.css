@@ -14,6 +14,9 @@ body {
   border-top: 15px solid red;
 }
 
+p{
+  font-family: 'Hind', sans-serif;
+}
 
 nav ul {
   list-style: none;
@@ -174,7 +177,8 @@ main {
 }
 .slideimg {
   vertical-align: middle;
-  max-height: 740px;
+  max-height: 100%;
+  max-width: 100%;
 }
 
 /* Slideshow container */
@@ -265,12 +269,17 @@ main {
 
 .main-1 {
   display: flex;
-  background-image: url(".././images/nealsyard.png");
+  background-image: url("https://farm4.staticflickr.com/3811/9404796964_55f97fc0db_b.jpg");
   background-size: cover;
   padding: 15% 10%;
   max-width: 100%;
   border-top: 20px solid red;
   border-bottom: 15px solid red;
+}
+
+
+p {
+  line-height: 1.6;
 }
 
 
@@ -286,18 +295,23 @@ main {
   color: white;
 }
 
+
 .main-2 {
   display: flex;
-  padding: 5%;
+  padding: 5% 3%;
 
 }
 
 .main-2 article {
-      order: 1; min-width: 75%;
+      order: 1; max-width: 75%;
       display: block;
       padding-right: 5%;
-      padding-left: 2%;
+
     }
+
+.comments{
+  padding-top: 10%;
+}
 
     .gallery {
       margin: 10px 50px;
@@ -320,136 +334,31 @@ main {
   .main-2  aside {
     display: block;
       order: 2;
-      min-width: 35%;
-      border-left: 1px solid #2a2d34;
-      padding-left: 5%;
+      max-width: 25%;
+      border-left: 1px solid #D01A1E;
+      padding-left: 3%;
 
     }
 
 
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 20px;
+}
+
+.train {
+  text-decoration: none;
+  list-style-type: none;
+  line-height: 1.6;
+}
+
+
+
+
 footer {
   margin: 0;
-  background-color: red;
+  background-color: #D01A1E;
   padding: 3%;
 }
-
-
-
-
-/*
-body {
-background-color: #FAF8E8;
-}
-
-
-
-.header {
-  margin: 0;
-  height: 25%;
-  padding-top: 0%;
-  text-align: center;
-}
-
-
-
-
-
-
-
-
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-
-
-ul {
-  display: inline-block;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  display: inline;
-  float: right;
-  font-size: 1em;
-  font-family: 'Montserrat', sans-serif;
-
-}
-
-
-
-li a {
-  color: #2a2d34;
-  padding: 8px 16px;
-  text-decoration: none;
-}
-
-li a.active {
-  background-color: #ffbf00;
-  color: white;
-}
-
-li a:hover:not(.active) {
-  background-color: #fe4a49;
-  color: white;
-}
-
-.row-1 {
-  display: flex;
-  box-sizing: border-box;
-  flex-direction: row;
-}
-
-.logo {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding-left: : 0px;
-  align-items:
-
-}
-
-.logo img {
-  height: 150px;
-width: auto;
-}
-
-.flexcontainer {
-  display: flex;
-  flex-direction: row;
-justify-self: stretch;
-}
-
-
-
-
-
-
-
-.row-2 {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.row-2 img {
-  width: 1440px;
-  height: 637.5px;
-}
-
-
-
-h1 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 3em;
-  color: #2a2d34;
-  text-align: center;
-
-
- }
-*/

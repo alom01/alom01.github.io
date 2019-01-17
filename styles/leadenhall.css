@@ -14,6 +14,10 @@ body {
   border-top: 15px solid #D01A1E;
 }
 
+p {
+  font-family: 'Hind', sans-serif;
+
+}
 
 nav ul {
   list-style: none;
